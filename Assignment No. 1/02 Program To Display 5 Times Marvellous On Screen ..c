@@ -7,7 +7,7 @@ void Display()
 
     for( i = 1 ; i <=5 ; i++)
     {
-        printf("\n Marvellous ");
+        printf("Marvellous\n");
     }
 }
 void main()
