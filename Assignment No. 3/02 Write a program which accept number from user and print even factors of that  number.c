@@ -5,20 +5,21 @@
 
 void DisplayFactor(iNo)
 {
-    int i = 0;
+    int i = 1;
     if(iNo <= 0)
     {
-        //iNo = -iNo;
-        return;
+        iNo = -iNo;
     }
 
-    for( i = 1 ; iNo >= i; i++)
+    for( i = 1 ;iNo > i ; i++)
     {
-        if( i % 2 == 0)
+        if( iNo % i == 0)
         {
-            printf("\t%d",  i / 2);
+            if( i % 2 == 0 )
+            {
+                printf("\t%d", i);
+            }
         }
-
     }
     return ;
 }
