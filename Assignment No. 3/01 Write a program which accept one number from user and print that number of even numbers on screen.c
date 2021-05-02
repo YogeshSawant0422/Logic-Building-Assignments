@@ -3,30 +3,15 @@
 
 void printEven(int iNo)
 {
-    int Cnt = 1 , CiNo = 0;
+    int Cnt = 1;
     if(iNo <= 0)
     {
-        return;
+        printf("\n Invalid Number !!!!\n");return;
     }
-    while(iNo > 0)
+    while(iNo >= Cnt)
     {
-        CiNo++;
-        iNo--;
-    }
-    printf("\n Count Of iNo Is = ", CiNo);
-
-    getch();
-    while(iNo >= 0)
-    {
-        if(Cnt % 2 == 0)
-        {
-            printf("\t%d",Cnt);
-        }
-        Cnt++;
-        if(Cnt > CiNo)
-        {
-            break;
-        }
+            printf("\t%d",2*Cnt);
+            Cnt++;
     }
     return;
 }
