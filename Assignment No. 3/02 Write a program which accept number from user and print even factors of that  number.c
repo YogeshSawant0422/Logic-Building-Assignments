@@ -11,14 +11,14 @@ void DisplayFactor(iNo)
         iNo = -iNo;
     }
 
-    for( i = 1 ;iNo > i ; i++)
+    for( i = 1 ; i <=iNo ; i++)
     {
         if( iNo % i == 0)
         {
-            if( i % 2 == 0 )
-            {
+            //if( i % 2 == 0 )
+            //{
                 printf("\t%d", i);
-            }
+            //}
         }
     }
     return ;
