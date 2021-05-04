@@ -15,10 +15,10 @@ void DisplayFactor(iNo)
     {
         if( iNo % i == 0)
         {
-            //if( i % 2 == 0 )
-            //{
+            if( i % 2 == 0 )
+            {
                 printf("\t%d", i);
-            //}
+            }
         }
     }
     return ;

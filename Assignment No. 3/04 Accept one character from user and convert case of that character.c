@@ -18,7 +18,7 @@ int main()
 {
      char cValue = '\0';
 
-     printf("\n Enter character =");
+     printf("\n Enter character = ");
      scanf("%c",&cValue);
 
      DisplayConvert(cValue);
