@@ -28,7 +28,7 @@ int main()
 
     fDiscount = CalculateBill(iTotalBill);
 
-    printf("\n Total Bill Amount = %d . \n Discounted Amount = %0.0f",iTotalBill,fDiscount);
+    printf("\n\n Total Bill Amount = %d . \n\n Discounted Amount = %0.0f",iTotalBill,fDiscount);
 
     return 0;
 }
