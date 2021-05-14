@@ -3,18 +3,27 @@
 
  int Multiply(int iNo1,int iNo2, int iNo3)
  {
-        int Mult = 0 , ZeroMult = 0 , Number = 1;
-        if(iNo1 == 0 || iNo2 == 0 || iNo3 == 0)
+        int Mult = 0 , Number = 1;
+        if(iNo1 == 0 && iNo2 == 0 && iNo2 == 0)
+           {
+               return 0;
+           }
+
+        if(iNo1 == 0 )
         {
-            iNo1 =Number || iNo2 =Number  || iNo3 =Number;
-            ZeroMult  = iNo1 * iNo2 *iNo3;
-            return ZeroMult;
+           iNo1 = Number ;
         }
-        else
+        if(iNo2 == 0)
         {
-            Mult = iNo1 * iNo2 * iNo3;
-            return Mult;
+            iNo2 = Number;
         }
+        if(iNo3 == 0)
+        {
+            iNo3 = Number;
+        }
+
+        Mult  = iNo1 * iNo2 *iNo3;
+        return Mult;
  }
  int main()
  {
