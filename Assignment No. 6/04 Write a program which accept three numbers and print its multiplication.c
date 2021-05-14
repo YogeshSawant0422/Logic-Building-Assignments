@@ -3,7 +3,8 @@
 
  int Multiply(int iNo1,int iNo2, int iNo3)
  {
-        int Mult = 0 , Number = 1;
+        int Mult = 0 ;
+        int Number = 1;
         if(iNo1 == 0 && iNo2 == 0 && iNo2 == 0)
            {
                return 0;
