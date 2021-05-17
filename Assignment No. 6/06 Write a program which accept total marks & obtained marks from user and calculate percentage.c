@@ -2,13 +2,13 @@
 #include<stdio.h>
 #include<stdio.h>
 
- float Percentage(int iNo1,int iNo2)
+ float Percentage(int *iPtr1,int *iPtr2)
  {
-        if(iNo1 < iNo2 || iNo1 < 0)
+        if(*iPtr1 < *iPtr2 || *iPtr1 < 0)
         {
                 return -1;
         }
-        return((float ) iNo2/iNo1  * (100));
+        return( (float )  (*iPtr2) / (*iPtr1)  ) *  (100);
  }
  int main()
  {
@@ -20,7 +20,7 @@
      printf("\n Please enter obtained marks : ");
      scanf("%d",&iValue2);
 
-     fRet = Percentage(iValue1,iValue2);
+     fRet = Percentage(&iValue1,&iValue2);
 
      if(-1 == fRet)
      {

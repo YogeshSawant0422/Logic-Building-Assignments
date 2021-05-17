@@ -5,6 +5,7 @@
  {
         int Mult = 0 ;
         int Number = 1;
+
         if(iNo1 == 0 && iNo2 == 0 && iNo2 == 0)
            {
                return 0;
