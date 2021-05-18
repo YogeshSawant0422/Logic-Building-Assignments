@@ -25,5 +25,6 @@ int main()
      scanf("%d",&iValue);
 
      Pattern(iValue);
+     getch();
      return 0;
 }
