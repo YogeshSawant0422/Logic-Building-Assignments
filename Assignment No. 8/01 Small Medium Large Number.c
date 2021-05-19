@@ -6,7 +6,7 @@
 
 void Number(int iNo)
 {
-    (iNo < 50) ? printf("\n Small .") : (iNo >= 50 && iNo < 100) ? printf("\n Medium.") : (iNo >= 100) ? printf("\n Large .") : printf("\n Sorry !!!");
+    (iNo < 50) ? printf("\n Small .") : (iNo >= 50 && iNo < 100) ? printf("\n Medium.") : (iNo >=N 100) ? printf("\n Large .") : printf("\n Sorry !!!");
 }
 int main()
 {
