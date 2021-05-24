@@ -3,7 +3,6 @@
 //greater than 100 then print large
 #include<stdio.h>
 #include<conio.h>
-
 void Number(int iNo)
 {
     (iNo < 50) ? printf("\n Small .") : (iNo >= 50 && iNo < 100) ? printf("\n Medium.") :  printf("\n Large .");
