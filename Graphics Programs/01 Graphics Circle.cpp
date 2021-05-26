@@ -2,7 +2,7 @@
 #include<dos.h>
 #include<conio.h>
 
-main()
+int main()
 {
     int gd = DETECT , gm;
 
