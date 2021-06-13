@@ -8,7 +8,7 @@ double RectArea(float fWidth, float fHeight)
 {
     if(fWidth == 0 || fHeight == 0)
     {
-        printf("\n Invalid Data !!");
+        return 1;
     }
     else
     {
@@ -27,7 +27,14 @@ int main()
      scanf("%f",&fValue2);
 
      dRet = RectArea(fValue1, fValue2);
-     printf("\n Area Of Rectangle Is : %0.3lf",dRet);
+     if(dRet == 1)
+     {
+         printf("\n Invalid Data !!");
+     }
+     else
+     {
+         printf("\n Area Of Rectangle Is : %0.3lf",dRet);
+     }
 
      return 0;
 }
