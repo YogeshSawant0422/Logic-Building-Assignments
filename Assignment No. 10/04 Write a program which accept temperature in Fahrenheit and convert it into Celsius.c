@@ -8,10 +8,7 @@
 
 double FhtoCs(float fTemp)
 {
-    double dAns = 0.0;
-     dAns = ((double )fTemp - 32) * (double)(5/9);
-
-     return dAns;
+    return (fTemp - 32) * (5/9);
 }
 int main()
 {
@@ -22,7 +19,9 @@ int main()
      scanf("%d",&fValue);
 
      dRet = FhtoCs(fValue);
-     printf("Temperature In Celsius Is : %lf",dRet);
+
+     printf("Temperature In Celsius Is : %lf \n",dRet);
    _getch();
+
      return 0;
 }
