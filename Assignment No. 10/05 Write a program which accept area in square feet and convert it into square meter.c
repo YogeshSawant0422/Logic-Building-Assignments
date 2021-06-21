@@ -14,7 +14,7 @@ double SquareMeter(int iValue)
     }
     else
     {
-        return (double)( iValue) * 0.0929;
+        return iValue * 0.0929;
     }
 }
 int main()
