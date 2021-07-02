@@ -1,25 +1,29 @@
 //Write a program which accept number from user and display its digits in reverse order.
 #include<stdio.h>
+#include<conio.h>
+
 void DisplayDigit(int iNo)
 {
- int iDigit = 0;
+    int iDigit = 0;
 
- if(________)
- {
- iNo = -iNo;
- }
- while(______)
+    if(iNo < 0)
+     {
+        iNo = -iNo;
+     }
+    while(iNo > 0)
     {
- iDigit = ____________;
- printf(“%d”,iDigit);
- ______ = _____ / ______;
- }
+          iDigit =  iNo % 10;
+          printf("\n\t%d",iDigit);
+            iNo =  iNo /10;
+    }
 }
 int main()
 {
- int iValue = 0;
- printf(“Enter number”);
- scanf(“%d”,&iValue);
- DisplayDigit(iValue);
- return 0;
+     int iValue = 0;
+
+     printf("\n Enter number : ");
+     scanf("%d",&iValue);
+
+     DisplayDigit(iValue);
+     return 0;
 }
