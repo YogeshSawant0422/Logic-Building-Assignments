@@ -2,21 +2,19 @@
 
 void Pattern(int iRow ,int iCol)
 {
-    int i = 0 , j = 0 ,No = 1;
+    int i = 0 , j = 0;
 
-    for( i = 0 ; i < iRow ;i++)
+    for( i = 1 ; i <= iRow ;i++)
     {
-        for(j = 0 ; j < iCol ; j++)
+        for(j = 1 ; j <= iCol ; j++)
         {
-            if(i % 2 != 0)
+            if( i % 2 != 0)
             {
-                printf(" %d ",No * 2);
-                No++;
+                printf(" %d ", j * 2);
             }
             else
             {
-                printf(" %d ",No % 2);
-                No++;
+                printf(" %d ", (j * 2) - 1);
             }
         }
         printf("\n");
