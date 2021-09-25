@@ -2,7 +2,8 @@
 void Pattern(int iRow, int iCol)
 {
     int i = 0 , j = 0;
-    char ch = 'A';
+    char ch = '\0';
+    ch = 'A';
 
     for(i = 1 ; i <= iRow ; i++) 
     {
