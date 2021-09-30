@@ -5,18 +5,18 @@ void Pattern(int iRow, int iCol)
 {
     int i = 0 , j = 0;
 
-    for(i = 1 ; i <= iRow ;i++)
+    for(i = 0 ; i < iRow ;i++)
     {
-        for(j = 1 ; j <=  iCol ; j++)
+        for(j = 0 ; j < iCol ; j++)
         {
-           if( i == 1 || j == 1 || i == iRow || i == j || j== iCol)
-           {
-               printf(" * ");
-           }
-           else
-           {
-                printf("   ");
-           }
+          if( i < j)
+          {
+              printf("%d  ",j);
+          }
+          else
+          {
+              printf("   ");
+          }
         }
         printf("\n");
     }
