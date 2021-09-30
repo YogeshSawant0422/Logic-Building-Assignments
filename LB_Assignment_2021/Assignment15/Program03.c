@@ -1,6 +1,4 @@
-
 #include<stdio.h>
-
 void Pattern(int iRow, int iCol)
 {
     int i = 0 , j = 0;
@@ -9,18 +7,14 @@ void Pattern(int iRow, int iCol)
     {
         for(j = 1 ; j <= iCol ; j++)
         {
-            if( i + j == iCol + 1)
-            {
-                printf(" # ");
-            }
-            else if( i + j  > iCol)
-            {
-                printf(" @ ");
-            }
-            else
-            {
-                printf(" * ");
-            }
+           if(i == 1 || j == 1 || i == iRow || j == iCol || i + j == iCol + 1)
+           {
+               printf(" * ");
+           }
+           else
+           {
+               printf("   ");
+           }
         }
         printf("\n");
     }
@@ -35,4 +29,5 @@ int main()
 
     return 0;
 }
+
 
