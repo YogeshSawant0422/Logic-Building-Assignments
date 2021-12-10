@@ -13,7 +13,6 @@ void Reverse(char *str)
         printf("%c",*ptr);
         ptr--;
     }
-
 }
 int main()
 {
